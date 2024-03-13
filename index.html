@@ -10,9 +10,139 @@
   <body>
     <header>
       <nav>
-        <a href="./index.html" class="logo">
-          <img src="./images/logo.svg" alt="" />
-        </a>
+        <div onclick="window.location.href='index.html'" class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="deliver">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              <!--
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              --
+            >
+              >
+              <circle cx="12" cy="10" r="3" />
+              <path
+                d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"
+              />
+            </svg>
+          </div>
+          <div class="title-text">
+            <p>Deliver to</p>
+            <b>Uzbekistan</b>
+          </div>
+        </div>
+        <form class="inputs">
+          <select id="searchDropdownBox" name="url">
+            <option selected="selected" value="search-alias=aps">
+              All Departments
+            </option>
+            <option value="search-alias=arts-crafts-intl-ship">
+              Arts &amp; Crafts
+            </option>
+            <option value="search-alias=automotive-intl-ship">
+              Automotive
+            </option>
+            <option value="search-alias=baby-products-intl-ship">Baby</option>
+            <option value="search-alias=beauty-intl-ship">
+              Beauty &amp; Personal Care
+            </option>
+            <option value="search-alias=stripbooks-intl-ship">Books</option>
+            <option value="search-alias=fashion-boys-intl-ship">
+              Boys' Fashion
+            </option>
+            <option value="search-alias=computers-intl-ship">Computers</option>
+            <option value="search-alias=deals-intl-ship">Deals</option>
+            <option value="search-alias=digital-music">Digital Music</option>
+            <option value="search-alias=electronics-intl-ship">
+              Electronics
+            </option>
+            <option value="search-alias=fashion-girls-intl-ship">
+              Girls' Fashion
+            </option>
+            <option value="search-alias=hpc-intl-ship">
+              Health &amp; Household
+            </option>
+            <option value="search-alias=kitchen-intl-ship">
+              Home &amp; Kitchen
+            </option>
+            <option value="search-alias=industrial-intl-ship">
+              Industrial &amp; Scientific
+            </option>
+            <option value="search-alias=digital-text">Kindle Store</option>
+            <option value="search-alias=luggage-intl-ship">Luggage</option>
+            <option value="search-alias=fashion-mens-intl-ship">
+              Men's Fashion
+            </option>
+            <option value="search-alias=movies-tv-intl-ship">
+              Movies &amp; TV
+            </option>
+            <option value="search-alias=music-intl-ship">
+              Music, CDs &amp; Vinyl
+            </option>
+            <option value="search-alias=pets-intl-ship">Pet Supplies</option>
+            <option value="search-alias=instant-video">Prime Video</option>
+            <option value="search-alias=software-intl-ship">Software</option>
+            <option value="search-alias=sporting-intl-ship">
+              Sports &amp; Outdoors
+            </option>
+            <option value="search-alias=tools-intl-ship">
+              Tools &amp; Home Improvement
+            </option>
+            <option value="search-alias=toys-and-games-intl-ship">
+              Toys &amp; Games
+            </option>
+            <option value="search-alias=videogames-intl-ship">
+              Video Games
+            </option>
+            <option value="search-alias=fashion-womens-intl-ship">
+              Women's Fashion
+            </option>
+          </select>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search Amazon"
+          />
+          <button class="btn-search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1); transform: ; msfilter: "
+            >
+              <path
+                d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+        <div class="language">
+          <img src="./images/usa.png" alt="flad" />
+          <b>EN</b>
+        </div>
+        <div class="sigin-in">
+          <p>Hello, sigin in</p>
+          <b>Account & Lists</b>
+        </div>
+        <div class="return">
+          <p>Returns</p>
+          <b>& Orders</b>
+        </div>
+        <div class="cart">
+          <img src="./images/cart.svg" alt="cart" />
+          <b>Cart</b>
+        </div>
       </nav>
     </header>
 
