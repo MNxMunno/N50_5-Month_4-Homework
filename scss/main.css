@@ -414,6 +414,7 @@ header .sidebar.show {
 
 main {
   padding-top: 110.5px;
+  padding-bottom: 110px;
 }
 main .hero img {
   width: 100%;
