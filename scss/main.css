@@ -281,11 +281,16 @@ header .header-bottom {
   background: #232f3e;
   padding: 5px;
   position: fixed;
-  top: 8.6%;
+  top: 60px;
   left: 0;
   right: 0;
 }
-header .header-bottom .btn-burger {
+header .header-bottom .content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+header .header-bottom .content .btn-burger {
   padding: 5px;
   display: flex;
   align-items: center;
@@ -297,20 +302,40 @@ header .header-bottom .btn-burger {
   transition: 0.4s;
   border: 1px solid #232f3e;
 }
-header .header-bottom .btn-burger:hover {
+header .header-bottom .content .btn-burger:hover {
   border: 1px solid #fff;
   border-radius: 5px;
 }
+header .header-bottom .content .items {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header .header-bottom .content .items .item {
+  list-style: none;
+  border: 1px solid #232f3e;
+  padding: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+header .header-bottom .content .items .item a {
+  color: #fff;
+  font-family: sans-serif;
+}
+header .header-bottom .content .items .item:hover {
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
 header .sidebar {
   width: 400px;
-  height: 100vh;
-  background: #ccc;
+  height: 150vh;
+  background: #fff;
   position: relative;
   position: fixed;
   top: 0;
   left: -450px;
   transition: 0.5s;
-  z-index: 99;
+  z-index: 100;
 }
 header .sidebar .btn-burger-close {
   cursor: pointer;
@@ -332,6 +357,141 @@ header .sidebar .user h4 {
   color: #fff;
   font-family: sans-serif;
 }
+header .sidebar .content {
+  padding: 10px 20px;
+}
+header .sidebar .content h5 {
+  font-family: sans-serif;
+  color: #000;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 16px;
+}
+header .sidebar .content p {
+  font-family: sans-serif;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+}
+header .sidebar .content p svg {
+  fill: #fff;
+}
+header .sidebar .content p:hover {
+  background: #ddd;
+}
+header .sidebar .content p:hover svg {
+  stroke: #aaa;
+}
+header .sidebar .content p + p {
+  margin-top: 16px;
+}
+header .sidebar .content .last {
+  margin-bottom: 20px;
+}
+header .sidebar .content a {
+  display: block;
+  font-family: sans-serif;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: 0.4s;
+}
+header .sidebar .content a:hover {
+  background: #ccc;
+  color: #fff;
+}
+header .sidebar .content a + a {
+  padding-top: 5px;
+}
 header .sidebar.show {
+  z-index: 100;
   left: 0;
+}
+
+main {
+  padding-top: 110.5px;
+}
+main .hero img {
+  width: 100%;
+}
+main .products {
+  margin-top: -325px;
+}
+main .products .cards {
+  padding: 0px 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+main .products .cards .card {
+  width: 330px;
+  height: 380px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+main .products .cards .card h1 {
+  font-family: sans-serif;
+  color: #000;
+}
+main .products .cards .card .child-card {
+  max-width: 143px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .products .cards .card .child-card p {
+  padding-top: 10px;
+  font-family: sans-serif;
+  color: #000;
+}
+main .products .cards .card a {
+  color: rgb(0, 119, 255);
+  transition: 0.4s;
+}
+main .products .cards .card a:hover {
+  color: red;
+}
+main .products .cards .card .childCard {
+  width: 310px;
+}
+main .products .cards .card .childCard img {
+  width: 100%;
+}
+main .products .cards .card .hero-img-child {
+  width: 300px;
+}
+main .products .cards .card .hero-img-child p {
+  font-family: sans-serif;
+  color: #000;
+}
+main .products .cards .card .hero-img-child img {
+  width: 100%;
+}
+main .products .cards .card .imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+main .products .cards .card .imgs .img {
+  width: 97px;
+}
+main .products .cards .card .imgs .img p {
+  font-family: sans-serif;
+  color: #000;
+}
+main .products .cards .card .imgs .img img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

@@ -290,37 +290,64 @@ header {
     background: #232f3e;
     padding: 5px;
     position: fixed;
-    top: 8.6%;
+    top: 60px;
     left: 0;
     right: 0;
-    .btn-burger {
-      padding: 5px;
+
+    .content {
       display: flex;
       align-items: center;
-      color: #fff;
-      border: none;
-      background: transparent;
-      gap: 4px;
-      cursor: pointer;
-      transition: 0.4s;
-      border: 1px solid #232f3e;
-      &:hover {
-        border: 1px solid #fff;
-        border-radius: 5px;
+      gap: 32px;
+      .btn-burger {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        border: none;
+        background: transparent;
+        gap: 4px;
+        cursor: pointer;
+        transition: 0.4s;
+        border: 1px solid #232f3e;
+        &:hover {
+          border: 1px solid #fff;
+          border-radius: 5px;
+        }
+      }
+      .items {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .item {
+          list-style: none;
+          border: 1px solid #232f3e;
+          padding: 10px;
+          transition: 0.4s;
+          cursor: pointer;
+          a {
+            color: #fff;
+            font-family: sans-serif;
+          }
+          &:hover {
+            border: 1px solid #fff;
+            border-radius: 8px;
+          }
+        }
       }
     }
   }
 
   .sidebar {
     width: 400px;
-    height: 100vh;
-    background: #ccc;
+    height: 150vh;
+    background: #fff;
     position: relative;
     position: fixed;
     top: 0;
     left: -450px;
     transition: 0.5s;
-    z-index: 99;
+    z-index: 100;
+
     .btn-burger-close {
       cursor: pointer;
 
@@ -342,8 +369,147 @@ header {
         font-family: sans-serif;
       }
     }
+    .content {
+      padding: 10px 20px;
+      h5 {
+        font-family: sans-serif;
+        color: #000;
+        font-size: 20px;
+        padding-bottom: 20px;
+        padding-top: 16px;
+      }
+      p {
+        font-family: sans-serif;
+        color: #000;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.4s;
+        svg {
+          fill: #fff;
+        }
+        &:hover {
+          background: #ddd;
+          svg {
+            stroke: #aaa;
+          }
+        }
+      }
+      p + p {
+        margin-top: 16px;
+      }
+      .last {
+        margin-bottom: 20px;
+      }
+      a {
+        display: block;
+        font-family: sans-serif;
+        color: #000;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        transition: 0.4s;
+        &:hover {
+          background: #ccc;
+          color: #fff;
+        }
+      }
+      a + a {
+        padding-top: 5px;
+      }
+    }
   }
   .sidebar.show {
+    z-index: 100;
     left: 0;
+  }
+}
+main {
+  padding-top: 110.5px;
+  .hero {
+    img {
+      width: 100%;
+    }
+  }
+  .products {
+    margin-top: -325px;
+
+    .cards {
+      padding: 0px 20px;
+      // position: absolute;
+      // top: -325px;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+      .card {
+        width: 330px;
+        height: 380px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        h1 {
+          font-family: sans-serif;
+          color: #000;
+        }
+        .child-card {
+          max-width: 143px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          p {
+            padding-top: 10px;
+            font-family: sans-serif;
+            color: #000;
+          }
+        }
+        a {
+          color: rgb(0, 119, 255);
+          transition: 0.4s;
+          &:hover {
+            color: red;
+          }
+        }
+        .childCard {
+          width: 310px;
+          img {
+            width: 100%;
+          }
+        }
+        .hero-img-child {
+          width: 300px;
+          p {
+            font-family: sans-serif;
+            color: #000;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .imgs {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          .img {
+            width: 97px;
+            p {
+              font-family: sans-serif;
+              color: #000;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
