@@ -336,8 +336,6 @@ header .sidebar {
   left: -450px;
   transition: 0.5s;
   z-index: 100;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 header .sidebar .btn-burger-close {
   cursor: pointer;
@@ -346,6 +344,7 @@ header .sidebar .btn-burger-close {
   top: 5px;
   right: -44px;
   border: 0;
+  display: block;
 }
 header .sidebar .user {
   display: flex;
