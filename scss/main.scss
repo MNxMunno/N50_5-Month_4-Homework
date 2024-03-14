@@ -339,7 +339,7 @@ header {
 
   .sidebar {
     width: 400px;
-    height: 150vh;
+    height: 100vh;
     background: #fff;
     position: relative;
     position: fixed;
@@ -371,6 +371,7 @@ header {
     }
     .content {
       padding: 10px 20px;
+
       h5 {
         font-family: sans-serif;
         color: #000;

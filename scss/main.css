@@ -328,7 +328,7 @@ header .header-bottom .content .items .item:hover {
 }
 header .sidebar {
   width: 400px;
-  height: 150vh;
+  height: 100vh;
   background: #fff;
   position: relative;
   position: fixed;
