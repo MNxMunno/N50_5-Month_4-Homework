@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+input {
+  outline: none;
+}
 
 a {
   text-decoration: none;
@@ -31,13 +34,14 @@ header {
   nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 5px;
 
     .logo {
       width: 113px;
       height: 50px;
       cursor: pointer;
-      padding: 10px 5px;
+      padding: 4px 5px;
       transition: 0.4s;
       border: 1px solid #131921;
       &:hover {
@@ -50,7 +54,7 @@ header {
     }
     .deliver {
       width: 113px;
-
+      background: transparent;
       color: #fff;
       display: flex;
       align-items: end;
@@ -66,7 +70,7 @@ header {
       }
     }
     .inputs {
-      width: 900px;
+      width: 800px;
       padding-left: 10px;
       height: 40px;
       display: flex;
@@ -122,14 +126,14 @@ header {
       }
     }
     .language {
-      width: 60px;
+      width: 80px;
       height: 40px;
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
       border: 1px solid #131921;
-
+      padding: 23px 0;
       margin-left: 5px;
       cursor: pointer;
       font-family: sans-serif;
@@ -143,6 +147,7 @@ header {
       }
     }
     .sigin-in {
+      width: 170px;
       color: #fff;
       padding: 5px;
       font-family: sans-serif;
@@ -155,6 +160,7 @@ header {
       }
     }
     .return {
+      width: 100px;
       color: #fff;
       padding: 5px;
       font-family: sans-serif;
@@ -183,5 +189,161 @@ header {
         width: 45px;
       }
     }
+  }
+  .modal {
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 374px;
+    height: 370px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    background: #fff;
+    z-index: 100;
+    h3 {
+      font-family: sans-serif;
+      padding: 16px 24px;
+      background: #dbdbdb;
+      border-radius: 12px 12px 0px 0px;
+      border-bottom: 1px solid #bbb;
+    }
+    p {
+      font-family: sans-serif;
+      color: #565959;
+      font-size: 14px;
+      padding: 14px 16px;
+      text-align: center;
+    }
+    .btn-sign {
+      width: 325px;
+      margin-left: 20px;
+      background: rgb(255, 217, 0);
+      border: 0;
+      padding: 12px 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-family: sans-serif;
+      transition: 0.4s;
+      &:hover {
+        background: rgb(248, 183, 62);
+      }
+    }
+    // .line-text {
+    //   span {
+    //     height: 1px;
+    //     width: 30px;
+    //     background: #d22525;
+    //   }
+    // }
+    form {
+      padding-left: 35px;
+      input {
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #aaa;
+      }
+      button {
+        border: none;
+        height: 30px;
+        width: 100px;
+        background: white;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+    }
+    select {
+      width: 325px;
+      margin: auto;
+      height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #d6d6d6;
+      display: block;
+      cursor: pointer;
+    }
+    .close {
+      border: none;
+      width: 60px;
+      height: 30px;
+      background: rgb(255, 230, 0);
+      border-radius: 8px;
+      border: 1px solid rgb(255, 217, 0);
+      cursor: pointer;
+      font-family: sans-serif;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+      transition: 0.4s;
+      &:hover {
+        background: rgb(248, 220, 62);
+      }
+    }
+  }
+  .header-bottom {
+    background: #232f3e;
+    padding: 5px;
+    position: fixed;
+    top: 8.6%;
+    left: 0;
+    right: 0;
+    .btn-burger {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      border: none;
+      background: transparent;
+      gap: 4px;
+      cursor: pointer;
+      transition: 0.4s;
+      border: 1px solid #232f3e;
+      &:hover {
+        border: 1px solid #fff;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .sidebar {
+    width: 400px;
+    height: 100vh;
+    background: #ccc;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: -450px;
+    transition: 0.5s;
+    z-index: 99;
+    .btn-burger-close {
+      cursor: pointer;
+
+      background: transparent;
+      position: absolute;
+      top: 5px;
+      right: -44px;
+      border: 0;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      gap: 5px;
+      background: #232f3e;
+      h4 {
+        color: #fff;
+        font-family: sans-serif;
+      }
+    }
+  }
+  .sidebar.show {
+    left: 0;
   }
 }
