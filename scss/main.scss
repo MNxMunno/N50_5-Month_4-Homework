@@ -347,7 +347,8 @@ header {
     left: -450px;
     transition: 0.5s;
     z-index: 100;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
     .btn-burger-close {
       cursor: pointer;
 
