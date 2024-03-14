@@ -328,7 +328,7 @@ header .header-bottom .content .items .item:hover {
 }
 header .sidebar {
   width: 400px;
-  height: 100vh;
+  height: 100%;
   background: #fff;
   position: relative;
   position: fixed;
@@ -336,6 +336,7 @@ header .sidebar {
   left: -450px;
   transition: 0.5s;
   z-index: 100;
+  overflow-x: scroll;
 }
 header .sidebar .btn-burger-close {
   cursor: pointer;
